@@ -195,7 +195,9 @@ function get_page_name(req) {
     return req.params.page_name;
 }
 
-app.listen(8080);
+app.listen(8080, function(){
+    console.log('listening on 8080');
+});
 
 
 
